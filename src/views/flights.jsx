@@ -120,7 +120,7 @@ class Flight extends Component {
                       {/* Offers */}
                       <div className="offers">
 
-                      <div className="search">
+                      <div className="search2">
         <div className="search_inner">
           {/* Search Contents */}
           <div className="container fill_height no-padding">
@@ -145,12 +145,12 @@ class Flight extends Component {
                       <input type="text" className="destination search_input" required="required" />
                     </div>
                     <div className="search_item">
-                      <div>check in</div>
-                      <input type="text" className="check_in search_input" placeholder="YYYY-MM-DD" />
+                      <div>Departure Date</div>
+                      <input type="date" className="check_in search_input" placeholder="YYYY-MM-DD" />
                     </div>
                     <div className="search_item">
-                      <div>check out</div>
-                      <input type="text" className="check_out search_input" placeholder="YYYY-MM-DD" />
+                      <div>Return Date</div>
+                      <input type="date" className="check_out search_input" placeholder="YYYY-MM-DD" />
                     </div>
                     <div className="search_item">
                       <div>adults</div>
@@ -163,83 +163,20 @@ class Flight extends Component {
                     <div className="search_item">
                       <div>children</div>
                       <select name="children" id="children_1" className="dropdown_item_select search_input">
-                        <option>0</option>
+                        <option>01</option>
                         <option>02</option>
                         <option>03</option>
                       </select>
                     </div>
+                    <div className="search_item">
+                      <div>Class</div>
+                      <select name="classes" id="classes_1" className="dropdown_item_select search_input">
+                        <option>Economy</option>
+                        <option>Business</option>
+                      </select>
+                    </div>
                     <br/>
-                    <div className="extras">
-                      <ul className="search_extras clearfix">
-                        <li className="search_extras_item">
-                          <div className="clearfix">
-                            <input type="checkbox" id="search_extras_1" className="search_extras_cb" />
-                            <label htmlFor="search_extras_1">Pet Friendly</label>
-                          </div>	
-                        </li>
-                        <li className="search_extras_item">
-                          <div className="clearfix">
-                            <input type="checkbox" id="search_extras_2" className="search_extras_cb" />
-                            <label htmlFor="search_extras_2">Car Parking</label>
-                          </div>
-                        </li>
-                        <li className="search_extras_item">
-                          <div className="clearfix">
-                            <input type="checkbox" id="search_extras_3" className="search_extras_cb" />
-                            <label htmlFor="search_extras_3">Wireless Internet</label>
-                          </div>
-                        </li>
-                        <li className="search_extras_item">
-                          <div className="clearfix">
-                            <input type="checkbox" id="search_extras_4" className="search_extras_cb" />
-                            <label htmlFor="search_extras_4">Reservations</label>
-                          </div>
-                        </li>
-                        <li className="search_extras_item">
-                          <div className="clearfix">
-                            <input type="checkbox" id="search_extras_5" className="search_extras_cb" />
-                            <label htmlFor="search_extras_5">Private Parking</label>
-                          </div>
-                        </li>
-                        <li className="search_extras_item">
-                          <div className="clearfix">
-                            <input type="checkbox" id="search_extras_6" className="search_extras_cb" />
-                            <label htmlFor="search_extras_6">Smoking Area</label>
-                          </div>
-                        </li>
-                        <li className="search_extras_item">
-                          <div className="clearfix">
-                            <input type="checkbox" id="search_extras_7" className="search_extras_cb" />
-                            <label htmlFor="search_extras_7">Wheelchair Accessible</label>
-                          </div>
-                        </li>
-                        <li className="search_extras_item">
-                          <div className="clearfix">
-                            <input type="checkbox" id="search_extras_8" className="search_extras_cb" />
-                            <label htmlFor="search_extras_8">Pool</label>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="more_options">
-                      <div className="more_options_trigger">
-                        <a href="#">load more options</a>
-                      </div>
-                      <ul className="more_options_list clearfix">
-                        <li className="more_options_item">
-                          <div className="clearfix">
-                            <input type="checkbox" id="more_options_1" className="search_extras_cb" />
-                            <label htmlFor="more_options_1">Pet Friendly</label>
-                          </div>	
-                        </li>
-                        <li className="more_options_item">
-                          <div className="clearfix">
-                            <input type="checkbox" id="more_options_2" className="search_extras_cb" />
-                            <label htmlFor="more_options_2">Car Parking</label>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+                    
                     <button className="button search_button">search<span /><span /><span /></button>
                   </form>
                 </div>
